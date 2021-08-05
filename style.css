@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-image:url("images/mosque.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  height: 1200px;
+}
+@font-face{
+  font-family:font_Azad;
+  src:url("font_headline/Azad.ttf") format("truetype")
+}
+@font-face{
+  font-family:font_menubar;
+  src:url("font_menubar/Merin.ttf") format("truetype")
+}
+@font-face {
+  font-family:font_kalpurush;
+  src:url("font_kalpurush/kalpurush.ttf") format("truetype")
+}
+@keyframes hand2{
+  0%  {color:green;left:0px;top:0px;}
+  25% {color:red;left:50px;top:0px;}
+  50% {color:green;left:0px;top:0px;}
+  75% {color:red;left:50px;top:0px;}
+  100%{color:green;left:0px;top:0px;}
+}
+@keyframes hand1{
+  0%  {color:green;left:0px;top:0px;}
+  25% {color:red;left:-50px;top:0px;}
+  50% {color:green;left:0px;top:0px;}
+  75% {color:red;left:-50px;top:0px;}
+  100%{color:green;left:0px;top:0px;}
+}
+body .content{
+  background: #a8a232;
+  position:relative;
+  overflow:hidden;
+}
+#ic1{
+  background:;
+  color:green;
+  margin-left:0px;
+  animation-name:hand1;
+  position:relative;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+#ic2{
+  background:;
+  color:green;
+  margin-left:0px;
+  animation-name:hand2;
+  position:relative;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+.content ul{
+  margin-left: 400px;
+}
+.content ul li a{
+  text-decoration:none;
+  color: #3b2829;
+  font-size:18px;
+  font-family:font_menubar;
+}
+.content ul li{
+  float:left;
+  list-style-type:none;
+  padding:15px;
+}
+.content ul li a:hover{
+  background:#48cbf0;
+  border-radius:5px;
+}
+.hadith{
+  margin-top:10px;
+  margin-left:200px;
+  background:rgba(0,0,0,0.3);
+  width: 900px;
+  height: 250px;
+  border-radius:50px;
+  box-shadow:-20px 20px 10px rgba(0,0,0,0.5) ;
+  border-style:groove;
+}
+.hadith .button{
+  margin-left:750px;
+  position:absolute;
+  margin-top:40px;
+}
+.hadith .button button{
+  background:khaki;
+  width:70px;
+  height:20px;
+  border-radius:10px;
+}
+.hadith .button button:hover{
+  background:black;
+  color:white;
+}
+.hadith .bani p{
+  font-family: font_kalpurush;
+  font-size:30px;
+  color:black;
+}
+.hadith p{
+  font-family:font_Azad;
+}
+.bayhaki p{
+  color:black;
+  font-family:font_kalpurush;
+  margin-left:300px;
+}
+.ajker_hadith p{
+  color: #522727;
+  font-size:30px;
+  text-decoration:underline;
+  padding:3px;
+}

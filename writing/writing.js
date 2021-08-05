@@ -1,0 +1,20 @@
+$(document).ready(function(){
+  $(".content_1").click(function(){
+    $("#content_1").toggle(1000);
+  });
+  $(".btn1").click(function(){
+    $("#content_1").hide();
+  });
+  $(".content_2").click(function(){
+    $("#content_2").toggle(1000);
+  });
+  $(".btn2").click(function(){
+    $("#content_2").hide();
+  });
+  $(".content_3").click(function(){
+    $("#content_3").toggle(1000);
+  });
+  $(".btn3").click(function(){
+    $("#content_3").hide();
+  });
+});

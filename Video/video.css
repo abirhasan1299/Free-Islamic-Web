@@ -1,0 +1,82 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+@font-face{
+  font-family:font_Azad;
+  src:url("../font_headline/Azad.ttf") format("truetype")
+}
+@font-face {
+  font-family:font_kalpurush;
+  src:url("../font_kalpurush/kalpurush.ttf") format("truetype")
+}
+@keyframes back{
+  0%{left:0px;top:0px;}
+  100%{left:-30px;top:0px;}
+}
+body{
+  background-image:url("../images/desert.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+body p{
+  font-size:50px;
+  font-family:font_Azad;
+  color:blue;
+  text-decoration: underline;
+}
+.btn{
+  position:absolute;
+  margin-top:100px;
+  margin-left:550px;
+}
+.btn button a{
+  text-decoration: none;
+  font-size:20px;
+  color:Red;
+}
+.btn button{
+  border-radius:10px;
+  width:100px;
+  height:30px;
+  border-style:groove;
+  border-color:pink;
+}
+.btn button:hover{
+  border-color:white;
+  background: black;
+  width:150px;
+  animation-name:back;
+  position:relative;
+  animation-duration:0.5s;
+  animation-iteration-count:1;
+}
+.topic{
+  background: rgba(191, 196, 148, 0.5);
+  width:700px;
+  height:1900px;
+  padding:10px;
+  margin-left:300px;
+  box-shadow:-20px 20px 10px rgba(0,0,0,0.3);
+  border-radius:10px;
+  border-style:ridge;
+}
+.topic ul li{
+  padding:15px;
+  list-style-type:none;
+  border-style:groove;
+  border-color:white;
+  border-radius:5px;
+}
+.topic ul li a{
+  font-family:font_kalpurush;
+  text-decoration:none;
+  font-size: 20px;
+  color:black;
+}
+.topic ul li a:hover{
+  text-decoration:underline;
+  background:Green;
+  color:violet;
+}

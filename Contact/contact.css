@@ -1,0 +1,88 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+@font-face{
+  font-family:font_menubar;
+  src:url("../font_menubar/Merin.ttf") format("truetype")
+}
+@keyframes back {
+  0%{left:0px;top:0px;}
+  25%{left:-20px; top:0px;}
+  50%{left:0px;top:0px;}
+  75%{left:-20px; top:0px;}
+  100%{left:0px;top:0px;}
+}
+body{
+background-image:url("images/profile.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+height:1400px;
+position:relative;
+}
+.btn{
+  position:absolute;
+  margin-left:1000px;
+  margin-top:500px;
+}
+.btn button{
+  background:green;
+  border-radius:50px;
+  border-style:dashed;
+  border-color:khaki;
+  width:150px;
+  height:50px;
+}
+.btn button:hover{
+  background:black;
+  color:white;
+  animation-name:back;
+  position:relative;
+  animation-duration:4s;
+  animation-iteration-count: 2;
+}
+.btn button a{
+  text-decoration:none;
+  color:yellow;
+}
+.status{
+  margin-left:900px;
+  margin-top:100px;
+  position:absolute;
+  background: rgba(166, 174, 166, 0.3);
+  box-shadow:-20px 20px 10px rgba(0,0,0,0.3);
+  width:500px;
+  height: 250px;
+
+}
+.status h1{
+  margin-left:50px;
+}
+.site ul li a #icon1{
+  color:green;
+}
+.site ul li a #icon2{
+  color:green;
+}
+.site ul li a #icon3{
+  color:green;
+}
+.site ul li a #icon4{
+  color:green;
+}
+.site ul li {
+  padding:10px;
+  list-style-type:none;
+  margin-left:30px;
+}
+.site ul li a{
+  color:black;
+  text-decoration: none;
+  font-family:font_menubar;
+  font-size:20px;
+}
+.site ul li a:hover{
+  background:rgba(165, 168, 139, 1);
+  color:white;
+}
